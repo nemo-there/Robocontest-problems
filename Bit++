@@ -1,0 +1,13 @@
+n=int(input())
+p_count = 0
+n_count = 0
+for i in range(n):
+    s = input()
+    if s.count('+') == 2:
+        p_count += 1
+    else:
+        n_count -=1
+a=p_count+n_count
+print(a)
+
+# Bit++ in python
