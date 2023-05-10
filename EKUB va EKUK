@@ -1,0 +1,20 @@
+# Masala #0265 
+
+
+def EKUB(x, y):
+    if x < y:
+        x, y = y, x
+    while y != 0:
+        x, y = y, x % y
+    return x
+
+def EKUK(x, y):
+    return x * y // EKUB(x, y)
+
+a ,b=map(int, input().split())
+
+ekub = EKUB(a, b)
+ekuk = EKUK(a, b)
+
+print(ekuk*ekub)
+
